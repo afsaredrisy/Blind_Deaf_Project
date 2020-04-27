@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.linguistics.tts_stt.views.AutoFitTextureView
+        android:id="@+id/camera_texture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.linguistics.tts_stt.views.OverlayView
+        android:id="@+id/segmentation_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.linguistics.tts_stt.views.OverlayView
+        android:id="@+id/debug_overlay"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/runtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Runtime : "
+        android:textColor="#000000"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+
+        />
+
+    <TextView
+        android:id="@+id/useGpu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Use GPU"
+        android:visibility="gone"
+        android:textColor="#000000"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/runtime"
+
+        />
+
+    <Switch
+        android:id="@+id/usegpu_switch"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@+id/useGpu" />
+
+</RelativeLayout>

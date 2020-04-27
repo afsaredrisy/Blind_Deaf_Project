@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Blind Deaf App</string>
+    <string name="enter_your_query">Enter your query</string>
+    <string name="speak">Speak</string>
+</resources>
